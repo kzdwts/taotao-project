@@ -70,9 +70,6 @@
 				<configuration>
 					<port>8081</port>
 					<path>/</path>
-					<url>http://rest.taotao.kangyong.top/manager/text</url>
-					<username>kangyong</username>
-					<password>kangyong1024</password>
 				</configuration>
 			</plugin>
 		</plugins>
