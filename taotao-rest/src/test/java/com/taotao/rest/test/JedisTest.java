@@ -26,7 +26,7 @@ public class JedisTest {
 	@Test
 	public void testJedisSingle() {
 		// 创建一个jedis对象
-		Jedis jedis = new Jedis("111.231.87.104", 6379);
+		Jedis jedis = new Jedis("192.168.10.131", 6379);
 		//jedis.auth("zhigui");
 		// 调用jedis的方法，方法名和redis命令一致
 		jedis.set("name", "王丽丽");
@@ -70,12 +70,12 @@ public class JedisTest {
 //		nodes.add(new HostAndPort("192.168.10.128", 7004));
 //		nodes.add(new HostAndPort("192.168.10.128", 7005));
 //		nodes.add(new HostAndPort("192.168.10.128", 7006));
-		nodes.add(new HostAndPort("111.231.87.104", 7001));
-		nodes.add(new HostAndPort("111.231.87.104", 7002));
-		nodes.add(new HostAndPort("111.231.87.104", 7003));
-		nodes.add(new HostAndPort("111.231.87.104", 7004));
-		nodes.add(new HostAndPort("111.231.87.104", 7005));
-		nodes.add(new HostAndPort("111.231.87.104", 7006));
+		nodes.add(new HostAndPort("192.168.10.131", 7001));
+		nodes.add(new HostAndPort("192.168.10.131", 7002));
+		nodes.add(new HostAndPort("192.168.10.131", 7003));
+		nodes.add(new HostAndPort("192.168.10.131", 7004));
+		nodes.add(new HostAndPort("192.168.10.131", 7005));
+		nodes.add(new HostAndPort("192.168.10.131", 7006));
 		// 连接集群
 		JedisCluster jedisCluster = new JedisCluster(nodes);
 
