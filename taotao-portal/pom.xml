@@ -69,9 +69,6 @@
 				<configuration>
 					<port>8082</port>
 					<path>/</path>
-					<url>http://www.taotao.kangyong.top/manager/text</url>
-					<username>kangyong</username>
-					<password>kangyong1024</password>
 				</configuration>
 			</plugin>
 		</plugins>

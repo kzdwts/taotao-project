@@ -25,7 +25,7 @@ public class SolrCloudTest {
 	public void testAddDocument() throws SolrServerException, IOException {
 		// 创建一个和solr集群的连接
 		// 参数就是zookeeper的地址列表，使用逗号分隔
-		String zkHost = "111.231.87.104:2181,111.231.87.104:2182,111.231.87.104:2183";
+		String zkHost = "192.168.10.132:2181,192.168.10.132:2182,192.168.10.132:2183";
 		CloudSolrServer solrServer = new CloudSolrServer(zkHost);
 		// 设置默认的collection
 		solrServer.setDefaultCollection("collection2");
@@ -51,7 +51,7 @@ public class SolrCloudTest {
 	public void testDeleteDocument() throws SolrServerException, IOException {
 		// 创建一个和solr集群的连接
 		// 参数就是zookeeper的地址列表，使用逗号分隔
-		String zkHost = "111.231.87.104:2181,111.231.87.104:2182,111.231.87.104:2183";
+		String zkHost = "192.168.10.132:2181,192.168.10.132:2182,192.168.10.132:2183";
 		CloudSolrServer solrServer = new CloudSolrServer(zkHost);
 		
 		// 设置默认collection
@@ -60,7 +60,6 @@ public class SolrCloudTest {
 		solrServer.deleteByQuery("*:*");
 		// 提交
 		solrServer.commit();
-		
 	}
 
 }
