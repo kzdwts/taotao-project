@@ -52,6 +52,16 @@
 		<dependency>
 			<groupId>org.apache.solr</groupId>
 			<artifactId>solr-solrj</artifactId>
+			<exclusions>
+				<exclusion>
+					<artifactId>httpclient</artifactId>
+					<groupId>org.apache.httpcomponents</groupId>
+				</exclusion>
+				<exclusion>
+					<artifactId>httpcore</artifactId>
+					<groupId>org.apache.httpcomponents</groupId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 	<build>
@@ -83,9 +93,6 @@
 				<configuration>
 					<port>8083</port>
 					<path>/</path>
-					<url>http://search.taotao.kangyong.top/manager/text</url>
-					<username>kangyong</username>
-					<password>kangyong1024</password>
 				</configuration>
 			</plugin>
 		</plugins>
