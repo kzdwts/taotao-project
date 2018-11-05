@@ -20,8 +20,8 @@
 	
 	<!-- 集群版 -->
 	<bean id="cloudSolrServer" class="org.apache.solr.client.solrj.impl.CloudSolrServer">
-		<constructor-arg name="zkHost" value="111.231.87.104:2181,111.231.87.104:2182,111.231.87.104:2183"></constructor-arg>
-		<property name="defaultCollection" value="collection2"></property>
+		<constructor-arg name="zkHost" value="192.168.10.132:2181,192.168.10.132:2182,192.168.10.132:2183" />
+		<property name="defaultCollection" value="collection2"/>
 	</bean>
 	
 
