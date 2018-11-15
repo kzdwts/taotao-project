@@ -63,9 +63,6 @@
 				<configuration>
 					<port>8084</port>
 					<path>/</path>
-					<url>http://sso.taotao.kangyong.top/manager/text</url>
-					<username>kangyong</username>
-					<password>kangyong1024</password>
 				</configuration>
 			</plugin>
 		</plugins>
