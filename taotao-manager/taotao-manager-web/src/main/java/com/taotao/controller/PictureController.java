@@ -9,6 +9,8 @@ import org.springframework.web.multipart.MultipartFile;
 import com.taotao.common.pojo.PictureResult;
 import com.taotao.service.PictureService;
 
+import javax.servlet.http.HttpServletResponse;
+
 /**
  * 文件(图片)上传控制层
  * 
@@ -29,7 +31,8 @@ public class PictureController {
 	 */
 	@RequestMapping("/pic/upload")
 	@ResponseBody
-	public PictureResult upload(MultipartFile uploadFile) {
+	public PictureResult upload(MultipartFile uploadFile, HttpServletResponse response) {
+		response.addHeader("Access-Control-Allow-Origin", "*");
 		return pictureService.uploadPicture(uploadFile);
 	}
 }
